@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-title>search-global</ion-title> -->
+    <ion-input type="text" placeholder="Search" [debounce]="250" (ionChange)="onSearchChange($event)"></ion-input>
+
+    <!-- <ion-searchbar  placeholder="Search" (ionChange)="onSearchChange($event)" [debounce]="250">
+    </ion-searchbar> -->
+  </ion-toolbar>
+  <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event,i)">
+    <ion-segment-button [value]="item" *ngFor="let item of segmentList;let i = index"
+      (click)="_segmentSelected(item,i)">
+      <ion-label>{{item}}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <ion-slides #slides (ionSlideDidChange)="_ionSlideDidChange($event)">
+    <ion-slide class="slider-cust" *ngFor="let item of slideList">
+      {{item}}
+      <!-- <app-user-card></app-user-card> -->
+    </ion-slide>
+  </ion-slides>
+</ion-content>

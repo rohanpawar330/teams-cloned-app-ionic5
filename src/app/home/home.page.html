@@ -1,0 +1,34 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="activity">
+      <ion-icon name="notifications-outline"></ion-icon>
+      <ion-label>Activity</ion-label>
+      <!-- <ion-badge>6</ion-badge> -->
+    </ion-tab-button>
+
+    <ion-tab-button tab="chats">
+      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+      <ion-label>Chats</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="teams">
+      <ion-icon name="people-outline"></ion-icon>
+      <ion-label>Teams</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="calander">
+      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-label>Calander</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="calls">
+      <ion-icon name="call-outline"></ion-icon>
+      <ion-label>Calls</ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button (click)="_openModal()">
+      <ion-icon name="ellipsis-horizontal"></ion-icon>
+      <ion-label>More</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>user-details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header class="ion-text-center">
+      <ion-card-title>
+        <div class="position-relative">
+          <ion-avatar class="margin-avt">
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          </ion-avatar>
+          <ion-icon class="status" name="time" color="warning" slot="start"></ion-icon>
+        </div>
+        <span class="fs-p8">(51919), Software Engineer</span>
+        <p class="fs-p7">CIO-CIO</p>
+      </ion-card-title>
+      <ion-card-subtitle>
+        <ion-buttons  class="ion-justify-content-center">
+          <ion-button (click)="onClick()">
+            <ion-icon slot="icon-only" name="analytics"></ion-icon>
+          </ion-button>
+          <ion-button (click)="onClick()">
+            <ion-icon slot="icon-only" name="videocam-outline"></ion-icon>
+          </ion-button>
+          <ion-button (click)="onClick()">
+            <ion-icon slot="icon-only" name="call-outline"></ion-icon>
+          </ion-button>
+          <ion-button (click)="onClick()">
+            <ion-icon slot="icon-only" name="git-network-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <!-- <ion-card-content> -->
+    <hr class="detail-ruler">
+    <div class="details">
+      <div>Email</div>
+      <div>abc.abc@gmail.com</div>
+    </div>
+    <hr class="detail-ruler">
+    <div class="details">
+      <div>Device</div>
+      <div>123456789</div>
+    </div>
+    <hr class="detail-ruler">
+    <div class="details">
+      <div>Office location</div>
+      <div>Pune</div>
+    </div>
+    <!-- </ion-card-content> -->
+  </ion-card>
+</ion-content>

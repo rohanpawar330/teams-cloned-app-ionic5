@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="_openMenu()">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="">
+      <ion-button>
+        Call
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <!-- <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="videocam-outline"></ion-icon>
+      </ion-button> -->
+      <ion-button (click)="_openSearchGlobal()">
+        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <!-- <ion-toolbar>
+    <ion-title>teams</ion-title>
+  </ion-toolbar> -->
+
+  <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event,i)">
+    <ion-segment-button [value]="item" *ngFor="let item of segmentList;let i = index"
+      (click)="_segmentSelected(item,i)">
+      <ion-label>{{item}}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+</ion-header>
+
+<ion-content>
+  <ion-slides #slides (ionSlideDidChange)="_ionSlideDidChange($event)">
+    <ion-slide *ngFor="let item of slideList">
+      {{item}}
+    </ion-slide>
+  </ion-slides>
+
+  <ion-fab class="fab-position" vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="call-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

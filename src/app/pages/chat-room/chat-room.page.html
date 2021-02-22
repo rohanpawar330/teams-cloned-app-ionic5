@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>chat-room</ion-title>
+
+    <ion-buttons slot="end">
+      <!-- <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="videocam-outline"></ion-icon>
+      </ion-button> -->
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="videocam-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="call-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event,i)">
+    <ion-segment-button [value]="item" *ngFor="let item of segmentList;let i = index"
+      (click)="_segmentSelected(item,i)">
+      <ion-label>{{item}}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <ion-slides #slides (ionSlideDidChange)="_ionSlideDidChange($event)">
+    <ion-slide *ngFor="let item of slideList">
+      {{item}}
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="add-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <!-- <ion-title>Footer</ion-title> -->
+    <div class="position-relative">
+      <ion-icon class="smilye" name="happy-outline"></ion-icon>
+      <ion-input class="input-field" type="text" placeholder="Type a message"></ion-input>
+    </div>
+    <ion-buttons slot="end">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="camera-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="mic-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

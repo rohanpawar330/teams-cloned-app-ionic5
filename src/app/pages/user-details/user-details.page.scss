@@ -1,0 +1,25 @@
+.margin-avt {
+    margin: auto auto 16px;
+}
+ion-card {
+    box-shadow: none;
+}
+hr.detail-ruler {
+    background: #d4d4d4;
+}
+.details {
+    padding: 5px 0;
+}
+.details :first-child {
+    padding-bottom: 6px;
+}
+ion-icon.status {
+    position: absolute;
+    right: 38%;
+    bottom: 0%;
+    font-size: 1em;
+}
+
+ion-icon {
+    color: #464775;
+}

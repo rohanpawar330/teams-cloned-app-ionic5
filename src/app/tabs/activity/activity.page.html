@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="_openMenu()">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="">
+      <ion-button (click)="presentActionSheet()">
+        <ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+        Activity
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="filter-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="_openSearchGlobal()">
+        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Dark</ion-label>
+    <ion-toggle slot="end" (ionChange)="_toggle($event)"></ion-toggle>
+  </ion-item>
+</ion-content>
