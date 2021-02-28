@@ -1,0 +1,25 @@
+<!-- <ion-list class="width100">
+  <ion-item class="position-relative">
+    <ion-avatar slot="start" (click)="_userDetail()">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-icon class="status" name="time" color="warning" slot="start"></ion-icon>
+    <ion-label (click)="_moveToChatRoom()">
+      <div class="justify-content-between">
+        <span>Rohan Pawar</span>
+        <h3>
+          Yesterday
+        </h3>
+      </div>
+
+      <p class="align-center ">
+        <ion-icon class="margin-right-8p fs-1p4" slot="icon-only" name="trending-up-outline"></ion-icon> Duration: 11min
+        10sec
+      </p>
+    </ion-label>
+  </ion-item>
+</ion-list> -->
+
+<div #expandWrapper class='expand-wrapper' [class.collapsed]="!expanded">
+  <ng-content></ng-content>
+</div>

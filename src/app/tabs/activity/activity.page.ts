@@ -81,7 +81,7 @@ export class ActivityPage implements OnInit {
   }
 
   _toggle(event) {
-    console.log(event.detail.checked)
+    console.log(event)
     if (event.detail.checked) {
       document.body.setAttribute('color-theme', 'dark')
     } else {

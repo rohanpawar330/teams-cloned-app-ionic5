@@ -35,11 +35,37 @@
 </ion-header>
 
 <ion-content>
-  <ion-slides #slides (ionSlideDidChange)="_ionSlideDidChange($event)">
-    <ion-slide *ngFor="let item of slideList">
-      {{item}}
-    </ion-slide>
-  </ion-slides>
+  <!-- <ion-slides #slides (ionSlideDidChange)="_ionSlideDidChange($event)"> -->
+  <!-- <ion-slide class="align-fs" *ngFor="let item of slideList">
+      <app-user-call-card class="width100" expandHeight="150px" [expanded]="item.expanded"></app-user-call-card>
+    </ion-slide> -->
+  <!-- <ion-slide class="align-fs" *ngFor="let item of slideList"> -->
+  <ion-card *ngFor="let item of items">
+
+    <app-user-call-card class="width100" expandHeight="100px" [expanded]="item.expanded">
+      <p>
+        Hello there.
+      </p>
+      <p>
+        Hello there.
+      </p>
+      <p>
+        Hello there.
+      </p>
+      <p>
+        Hello there.
+      </p>
+      <p>
+        Hello there.
+      </p>
+      <p>
+        Hello there.
+      </p>
+    </app-user-call-card>
+  </ion-card>
+  <!-- </ion-slide>
+
+  </ion-slides> -->
 
   <ion-fab class="fab-position" vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button>

@@ -17,10 +17,10 @@ export class HomePage implements OnInit {
   async _openModal() {
     const modal = await this.modalCtrl.create({
       component: MoreComponent,
-      componentProps: {
-        'name': 'TechAssembler',
-        'type': 'Subscribe'
-      },
+      // componentProps: {
+      //   'name': 'TechAssembler',
+      //   'type': 'Subscribe'
+      // },
       mode: 'ios',
       cssClass: 'my-modal-componet-css',
       swipeToClose: true,

@@ -55,6 +55,19 @@ ion-fab.fab-position {
     justify-content: space-between;
 }
 
+.justify-sb-align-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.align-fs {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+    display: flex;
+}
 // position
 .position-relative {
     position: relative;
@@ -70,10 +83,16 @@ ion-fab.fab-position {
 .fs-1p3 {
     font-size: 1.3em;
 }
+.fs-1p4 {
+    font-size: 1.4em;
+}
 
 //padding
 .padding-left-3 {
     padding-left: 3%;
+}
+.margin-right-8p {
+    margin-right: 8px;
 }
 
 ion-segment-button {

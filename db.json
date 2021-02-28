@@ -1,0 +1,53 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "name": "rohan",
+            "email": "rohan@gmail.com",
+            "age": "12345",
+            "comapanyId": "1"
+        },
+        {
+            "id": "2",
+            "name": "rohan Pawar",
+            "email": "rohan@gmail.com",
+            "age": "12345",
+            "comapanyId": "1"
+        },
+        {
+            "id": "3",
+            "name": "Pawar rohan",
+            "email": "rohan@gmail.com",
+            "age": "12345",
+            "comapanyId": "2"
+        },
+        {
+            "id": "4",
+            "name": "rohan rohan",
+            "email": "rohan@gmail.com",
+            "age": "12345",
+            "comapanyId": "1"
+        },
+        {
+            "id": "5",
+            "name": "pawar pawar rohan",
+            "email": "rohan@gmail.com",
+            "age": "12345",
+            "comapanyId": "3"
+        }
+    ],
+    "companies": [
+        {
+            "id": "1",
+            "name": "apple"
+        },
+        {
+            "id": "2",
+            "name": "Microsoft"
+        },
+        {
+            "id": "3",
+            "name": "IBM"
+        }
+    ]
+}

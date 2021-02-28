@@ -6,7 +6,7 @@
     <!-- <ion-title>search-global</ion-title> -->
     <ion-input type="text" placeholder="Search" [debounce]="250" (ionChange)="onSearchChange($event)"></ion-input>
 
-    <!-- <ion-searchbar  placeholder="Search" (ionChange)="onSearchChange($event)" [debounce]="250">
+    <!-- <ion-searchbar placeholder="Search" (ionChange)="onSearchChange($event)" [debounce]="250">
     </ion-searchbar> -->
   </ion-toolbar>
   <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event,i)">
